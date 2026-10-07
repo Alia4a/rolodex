@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 import 'data/contact_group.dart';
+import 'screens/adaptive_layout.dart';
 
 final contactGroupsModel = ContactGroupsModel();
 
@@ -22,7 +22,7 @@ class RolodexApp extends StatelessWidget{
           darkColor: Color(0xFF1D1D1D),
         ),
       ),
-        home: CupertinoPageScaffold(child: Center(child: Text('Hello Rolodex!'))),
+        home: AdaptiveLayout(),
     );
   }
 }
